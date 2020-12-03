@@ -19,6 +19,8 @@
       <root url="jar://$PROJECT_DIR$/lib/spring-tx-5.2.3.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/spring-test-5.2.3.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/spring-core-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.9.RELEASE/spring-webmvc-5.2.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aspectjweaver-1.9.6.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

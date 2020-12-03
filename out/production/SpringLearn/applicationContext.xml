@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="User" class="com.springdemo1.ioc.User">
-
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <context:component-scan base-package="com.xiaoli"/>
+    <context:annotation-config/>
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+    <bean id="User" class="com.springdemo1.ioc.User" scope="singleton" init-method="add" destroy-method="add">
+    </bean>
+    <bean id="AnnotaionAspect" class="com.xiaoli.AnnotaionAspect" scope="singleton">
     </bean>
 </beans>
